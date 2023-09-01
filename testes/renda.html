@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma basica</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    
+        <h1>Bem vindos</h1>
+
+
+    <script>
+        alert('Descubra qual é a renda da sua familia total!')
+        var marido = Number(prompt('Quanto voce ganha?'))
+        var mulher = Number(prompt('Quanto sua esposa ganha?'))
+        var filho  = Number(prompt('Seu filho?'))
+        var s = marido + mulher + filho
+        document.writeln(`A renda total da sua familia é de ${s.toLocaleString('pt-BR', {style: 'currency', 'currency': 'BRL'})}`)
+    </script>
+
+    
+</body>         
+</html> 
