@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #area{
+        background-color: rgb(139, 139, 139);
+        color: rgb(136, 255, 0);
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        line-height: 200px;
+        text-align: center;
+        margin: auto;
+    }
+    
+</style>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+
+    <script>
+        
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar() {
+            a.innerText = 'Clicou!!'
+             
+             
+
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'black'
+
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'red'
+            
+        }
+
+    
+    </script>
+</body>
+</html>
