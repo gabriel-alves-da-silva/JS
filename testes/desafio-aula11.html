@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio da aula 11 </h1>
+    Em qual pais voce reside?: <input type="text" name="" id="pais">
+    <input type="button" value="Enviar" onclick="descobrir()">
+    <div id="res">
+
+
+    </div>
+    <script>
+        function descobrir(){
+
+        var resultado = document.getElementById('pais')
+        var resu = document.getElementById('res')
+        resul = (resultado.value)
+        if ( resul == 'Brasil') {
+            resu.innerHTML = ('Voce é brasileiro')
+
+        } else{
+            resu.innerHTML = ('Voce é estrangeiro')
+        }
+        }
+        
+    </script>
+</body>
+</html>

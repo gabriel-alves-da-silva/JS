@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Velocidade</h1>
+    Qual é sua velocidade: <input type="number" name="" id="velo">
+    <input type="button" value="Consultar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var v = document.getElementById('velo')
+            var res = document.getElementById('res')
+            vel = Number(v.value)
+            if (vel > 60) {
+                res.innerHTML = (`Voce foi multado por exesso de velocidade!`)
+
+
+                
+            } else {
+                res.innerHTML = ('Dirija com cuidado')
+            }
+        }
+    </script>   
+</body>
+</html>
